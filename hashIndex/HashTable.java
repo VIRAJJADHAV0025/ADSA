@@ -1,5 +1,3 @@
-package ADSA.HashIndex;
-
 import java.util.Scanner;
 
 public class HashTable {
