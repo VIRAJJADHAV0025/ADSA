@@ -26,4 +26,4 @@ A Hash Function converts a string into an index of a hash table. This project us
 
 ➡️ **Documentation:**
 
-* [Hash Table (Java)](HASHTABLE/README.md)
+* [Hash Table (Java)](HashTable/HASHTABLE.md)
