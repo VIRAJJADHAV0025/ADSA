@@ -13,7 +13,7 @@ Merge Sort is a sorting algorithm based on the **Divide and Conquer** technique.
 
 ➡️ **Documentation:**
 
-* [Merge Sort (Java)](Merge_Sort/MERGESORT.md)
+* [Merge Sort (Java)](MergeSort/MERGESORT.md)
 
 ---
 
@@ -26,4 +26,4 @@ A Hash Function converts a string into an index of a hash table. This project us
 
 ➡️ **Documentation:**
 
-* [Hash Function (Java)](HashIndex/README.md)
+* [Hash Table (Java)](HashTable/README.md)
