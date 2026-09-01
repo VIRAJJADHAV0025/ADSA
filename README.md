@@ -42,7 +42,7 @@ A **Binary Search Tree (BST)** stores smaller values in the left subtree and lar
 
 ➡️ **Documentation:**
 
-* [BST Traversal](BSTTraversal/BSTTRAVERSAL.md)
+* [BST Traversal](BSTTraversal/BSTTraversal.md)
 
 ---
 
@@ -57,4 +57,4 @@ This project demonstrates how to **search for a given key in a Binary Search Tre
 
 ➡️ **Documentation:**
 
-* [BST Search](BSTSearch/BSTSEARCH.md)
+* [BST Search](BSTSearch/BSTSearch.md)
