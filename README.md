@@ -58,3 +58,20 @@ This project demonstrates how to **search for a given key in a Binary Search Tre
 ➡️ **Documentation:**
 
 * [BST Search](BSTSearch/BSTSearch.md)
+
+---
+
+### BFS Traversal
+
+Breadth-First Search (**BFS**) is a graph traversal algorithm that visits vertices **level by level**. It uses a **queue** and a **visited array** to keep track of the vertices that have been visited.
+
+The graph is represented using an **adjacency matrix**.
+
+* **Data Structure:** Queue
+* **Graph Representation:** Adjacency Matrix
+* **Time Complexity:** `O(V²)`
+* **Space Complexity:** `O(V)`
+
+➡️ **Documentation:**
+
+* [BFS Traversal](BFSTraversal/BFSTraversal.md)
