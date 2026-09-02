@@ -75,3 +75,19 @@ The graph is represented using an **adjacency matrix**.
 ➡️ **Documentation:**
 
 * [BFS Traversal](BFSTraversal/BFSTraversal.md)
+
+---
+
+### Optimal Storage on Tape
+
+Optimal Storage on Tape is a method used to store files in the best possible order. The files are arranged from **shortest to longest** to minimize the total and average retrieval time.
+
+* **Optimal Order:** Shortest file → Longest file
+* **Time Complexity:** `O(n²)`
+* **Space Complexity:** `O(n)`
+
+➡️ **Documentation:**
+
+* [Optimal Storage on Tape](OptimalStorageOnTape/OSOT.md)
+
+---
