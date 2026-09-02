@@ -74,7 +74,7 @@ The graph is represented using an **adjacency matrix**.
 
 ➡️ **Documentation:**
 
-* [BFS Traversal](BFSTraversal/BFSTraversal.md)
+* [BFS Traversal](BFS/BFSTraversal.md)
 
 ---
 
