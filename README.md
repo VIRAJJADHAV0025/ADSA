@@ -142,3 +142,29 @@ This project uses **Dynamic Programming** to calculate the LCS length and then r
 
 
 ---
+
+### Dijkstra's Algorithm
+ 
+**Dijkstra's Algorithm** finds the **shortest distance** from a single source vertex to every other vertex in a weighted graph with **non-negative** edge weights. It is a **greedy** algorithm: at every step, it picks the unvisited vertex with the smallest distance, locks it in, and then **relaxes** the distances of its neighbours.
+ 
+For example, in a graph with edges `0-1 (10)`, `0-3 (5)`, `1-2 (1)`, `1-3 (2)`, `2-4 (4)`, `3-4 (2)` and source `0`, the shortest distances are `0, 7, 8, 5, 7`.
+ 
+This project uses an **adjacency matrix** and takes the graph and the source vertex as **user input**.
+ 
+- **Data Structure:** Arrays (`distance`, `visited`)
+- **Graph Representation:** Adjacency Matrix
+- **Technique:** Greedy
+- **Time Complexity:** `O(V²)`
+- **Space Complexity:** `O(V²)` for the matrix, `O(V)` extra
+| | Dijkstra |
+|---|---|
+| **Approach** | Greedy |
+| **Distance Array** | `distance[i]` stores the best known distance from the source |
+| **Relaxation** | `distance[u] + graph[u][v] < distance[v]` |
+| **Unreachable Vertices** | Stay at `INF` |
+| **Negative Weights** | Not supported |
+ 
+➡️ **Documentation:**
+ 
+* [Dijkstra's Algorithm](DijkstraAlgorithm/DIJKSTRAALGORITHM.md)
+---
