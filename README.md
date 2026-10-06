@@ -168,3 +168,30 @@ This project uses an **adjacency matrix** and takes the graph and the source ver
  
 * [Dijkstra's Algorithm](DijkstraAlgorithm/DIJKSTRAALGORITHM.md)
 ---
+
+### Floyd-Warshall Algorithm
+ 
+The **Floyd-Warshall Algorithm** finds the **shortest distance between every pair of vertices** in a weighted graph. It works with **negative edge weights** too, as long as the graph has no negative cycle. It uses **Dynamic Programming**: it allows the vertices to be used as intermediate stops one at a time, and updates `dist[i][j]` whenever the route through the current vertex `k` is shorter.
+ 
+For example, in a directed graph with edges `0→1 (3)`, `0→3 (7)`, `1→0 (8)`, `1→2 (2)`, `2→0 (5)`, `2→3 (1)`, `3→0 (2)`, the shortest distance from `1` to `0` is `5`, through `1 → 2 → 3 → 0`.
+ 
+This project uses an **adjacency matrix** and takes the graph as **user input** (`INF` for no edge, `0` on the diagonal).
+ 
+- **Data Structure:** 2D Distance Matrix
+- **Graph Representation:** Adjacency Matrix
+- **Technique:** Dynamic Programming
+- **Time Complexity:** `O(V³)`
+- **Space Complexity:** `O(V²)`
+| | Floyd-Warshall |
+|---|---|
+| **Approach** | Dynamic Programming |
+| **Distance Matrix** | `dist[i][j]` stores the best known distance from `i` to `j` |
+| **Update Rule** | `dist[i][k] + dist[k][j] < dist[i][j]` |
+| **Unreachable Pairs** | Stay at `INF` |
+| **Negative Weights** | Supported (no negative cycles) |
+ 
+➡️ **Documentation:**
+ 
+* [Floyd-Warshall Algorithm](FloydWarShall/FLYODWARSHALL.md)
+---
+
