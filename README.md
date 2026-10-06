@@ -113,3 +113,32 @@ This project has two versions:
 * [Prim's Algorithm](Prim'sAlgorithm/PRIMSALGORITHM.md)
 
 ---
+
+### Longest Common Subsequence (LCS)
+
+The **Longest Common Subsequence (LCS)** algorithm finds the longest sequence of characters that appears in two strings while maintaining their **relative order**. Characters do not need to be adjacent.
+
+For example, for `X = ABCBDAB` and `Y = BDCABA`, one valid LCS is `BCBA` with length `4`.
+
+This project uses **Dynamic Programming** to calculate the LCS length and then reconstructs one valid LCS by walking backwards through the DP table.
+
+- **Data Structure:** 2D DP Array
+- **Technique:** Dynamic Programming
+- **Time Complexity:** `O(m × n)`
+- **Space Complexity:** `O(m × n)`
+
+| | LCS |
+|---|---|
+| **Approach** | Dynamic Programming |
+| **DP Table** | `dp[i][j]` stores LCS length |
+| **Matching Characters** | `dp[i][j] = dp[i-1][j-1] + 1` |
+| **Non-Matching Characters** | `max(dp[i-1][j], dp[i][j-1])` |
+| **Time Complexity** | `O(m × n)` |
+| **Space Complexity** | `O(m × n)` |
+
+➡️ **Documentation:**
+
+* [Longest Common Subsequence](LongestCommonSubsequence/LONGESTCOMMONSUBSEQUENCE.md)
+
+
+---
