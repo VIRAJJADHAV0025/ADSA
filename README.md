@@ -91,3 +91,25 @@ Optimal Storage on Tape is a method used to store files in the best possible ord
 * [Optimal Storage on Tape](OptimalStorageOnTape/OSOT.md)
 
 ---
+
+### Prim's Algorithm
+
+Prim's Algorithm finds the **Minimum Spanning Tree (MST)** of a connected, undirected, weighted graph. It is a **greedy** algorithm: it starts from one vertex and, at every step, adds the cheapest edge that connects the tree to a new vertex.
+
+This project has two versions:
+
+* **Matrix version:** Adjacency matrix, scans all vertices to find the cheapest one.
+* **Heap version:** Adjacency list, uses a **min-heap (Priority Queue)** to find the cheapest edge.
+
+| | Matrix Version | Heap Version |
+|---|---|---|
+| **Data Structure** | Arrays (`key`, `parent`, `mstSet`) | Priority Queue + `inMST` array |
+| **Graph Representation** | Adjacency Matrix | Adjacency List |
+| **Time Complexity** | `O(V²)` | `O(E log V)` |
+| **Space Complexity** | `O(V)` extra | `O(V + E)` |
+
+➡️ **Documentation:**
+
+* [Prim's Algorithm](Prim'sAlgorithm/PRIMSALGORITHM.md)
+
+---
