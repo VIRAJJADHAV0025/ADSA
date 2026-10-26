@@ -222,4 +222,32 @@ This project takes `N` as **user input**, prints every board when `N ≤ 8` (onl
 * [N-Queens Problem](NQueens/NQUEENS.md)
 ---
 
+### Hamiltonian Cycle
+ 
+A **Hamiltonian Cycle** is a cycle in a graph that visits **every vertex exactly once** and then returns to the starting vertex. It uses **Backtracking**: the path always starts at vertex `0`, and each position is filled with an unused vertex that is connected to the previous one. At the end, the last vertex must connect back to the start; if it does not, the algorithm backtracks and tries another vertex.
+ 
+For example, in a graph with edges `0-1`, `0-3`, `1-2`, `1-3`, `1-4`, `2-4`, `3-4`, a Hamiltonian cycle is `0 → 1 → 2 → 4 → 3 → 0`.
+ 
+This project uses an **adjacency matrix** and takes the number of vertices and the matrix as **user input**. It stops at the first cycle it finds, or prints `No Hamiltonian cycle exists.`
+ 
+- **Data Structure:** Array (`path`)
+- **Graph Representation:** Adjacency Matrix
+- **Technique:** Backtracking
+- **Time Complexity:** `O(n!)` in the worst case
+- **Space Complexity:** `O(n²)` for the matrix, `O(n)` extra
+| | Hamiltonian Cycle |
+|---|---|
+| **Approach** | Backtracking |
+| **Path Array** | `path[i]` stores the vertex placed at position `i` (`-1` means empty) |
+| **Start** | `path[0] = 0` |
+| **Valid Next Vertex** | `graph[path[pos-1]][v] = 1` and `v` is not already in `path` |
+| **Closing Edge** | `graph[path[n-1]][path[0]] = 1` |
+| **Dead End** | Clear the position (`path[pos] = -1`) and try the next vertex |
+ 
+➡️ **Documentation:**
+ 
+* [Hamiltonian Cycle](HamiltonianCycle/HAMILTONIANCYCLEALGORITHM.md)
+---
+
+
 
