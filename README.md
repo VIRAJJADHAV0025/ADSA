@@ -193,5 +193,33 @@ This project uses an **adjacency matrix** and takes the graph as **user input** 
 ➡️ **Documentation:**
  
 * [Floyd-Warshall Algorithm](FloydWarShall/FLYODWARSHALL.md)
+
 ---
+ 
+### N-Queens Problem
+ 
+The **N-Queens Problem** places **N queens** on an **N × N chessboard** so that **no two queens attack each other**, meaning no two queens share a row, a column or a diagonal. It uses **Backtracking**: queens are placed one row at a time, and when a row has no safe column, the algorithm removes the previous queen and tries the next column.
+ 
+For example, for `N = 4` there are `2` valid boards, `board = [2, 4, 1, 3]` and `board = [3, 1, 4, 2]` (the column of the queen in each row). For `N = 8` there are `92`.
+ 
+This project takes `N` as **user input**, prints every board when `N ≤ 8` (only the first board for larger `N`), and prints the total number of solutions.
+ 
+- **Data Structure:** Array (`board`)
+- **Technique:** Backtracking
+- **Time Complexity:** `O(N!)` in the worst case
+- **Space Complexity:** `O(N)`
+| | N-Queens |
+|---|---|
+| **Approach** | Backtracking |
+| **Board Array** | `board[row]` stores the column of the queen in that row |
+| **Same Column** | `board[i] = col` |
+| **Same Diagonal** | `abs(board[i] - col) = abs(i - row)` |
+| **Dead End** | Remove the queen (`board[row] = 0`) and try the next column |
+| **No Solution** | `N = 2` and `N = 3` |
+ 
+➡️ **Documentation:**
+ 
+* [N-Queens Problem](NQueens/NQUEENS.md)
+---
+
 
