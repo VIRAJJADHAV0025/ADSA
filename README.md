@@ -246,7 +246,7 @@ This project uses an **adjacency matrix** and takes the number of vertices and t
  
 ➡️ **Documentation:**
  
-* [Hamiltonian Cycle](HamiltonianCycle/HAMILTONIANCYCLEALGORITHM.md)
+* [Hamiltonian Cycle](HamiltonianCycle/HAMILTONIANCYCLE.md)
 ---
 
 
