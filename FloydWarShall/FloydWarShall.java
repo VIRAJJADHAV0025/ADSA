@@ -32,7 +32,7 @@ public class FloydWarShall {
     static int readValue(Scanner sc) {
         String token = sc.next();
         if (token.equalsIgnoreCase("INF")) {
-            return INF;0 
+            return INF;
         }
         return Integer.parseInt(token);
     }
